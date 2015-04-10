@@ -4,16 +4,18 @@
 body {
 	margin:0 auto; 
 	padding:0 auto; 
-	font-family:Georgia, "Times New Roman", Times, serif; 
-	color: #000; 
+	font-family:Georgia, "Times New Roman", Times, serif; /* jika tulisan font tidak diatur, maka secara default akan menggunakan font ini. */
+	color: #000;                                          /* (lanjutan komen atas) contohnya seperti yg ada di footer   */
 	background-color: #FFF;
 }
 
+/*container untuk template keseluruhan yg mencakup header, menu, content, sidebar, sama footer
+	jadi bisa dibilang itu sebagai wadah utamanya */
 #container{
 	display:block; 
-	position:relative; 
+	position:relative; 					/* agar posisi layer bersifat relatif, menyesuaikan dg pengaturan yg ditentuin */
 	width: 1024px;
-	height: 0 auto;
+	height: 0 auto;                    /* 0 auto maksudnya tinggi webnya akan menyesuaikan dengan tulisan yg ada  */
 	background-color: lavenderblush;
 	margin: 0 auto; /*agar posisi container berada di center */
 }
@@ -21,13 +23,13 @@ body {
 #header {
 	width: 100%;
 	height: 200px;
-	/*background-image:url('images/w.jpg');*/
-	background-color: #FF0;
+	/*background-image:url('images/w.jpg');*/  
+	background-color: #FF0;                        /* background color dihapus aja jika ingin menggunakan gambar untuk header */
 	background-position:center top;
 	margin-top: 20px; /* agar ada jarak di atas header */
 }
 
-/* content */
+/* content untuk isi tulisan yg ada di sebelah kanan */
 #content {
 	float:left;
 	width: 75%;
@@ -36,13 +38,14 @@ body {
 	border-right:#fb1ff3 double 10px;
 }
 
+/* sidebar untuk menu yg ada di sebelah kiri yg mencakup subscribe dan contact US */
 #sidebar {
 	float:left;
 	width: 24%;
 	background-color: lavenderblush;
 	height: 0 auto;
-	word-wrap:break-word;
-}
+	word-wrap:break-word;                /* agar tulisan tidak melebihi pengaturan layer, jika dihapus maka akan membuat tulisan melewati  /* 		
+}											/* batas layer (ke samping terus) */
 
 #footer {
 	float:left;
@@ -52,6 +55,7 @@ body {
 	margin-bottom: 20px;
 }
 
+/* untuk tulisan yg ada di footer */
 #footer h2 {
 	margin: 0 auto;
 	padding-top: 10px; 
@@ -59,15 +63,15 @@ body {
 	text-align:center;
 }
 
+/* clear untuk menghapus background yg menghalangi containernya, jika ini dihapus maka tampilan di bagian bawah sidebar akan berwarna putih seperti di body */
 .clear{
 	clear:both;
 }
 
 /* menu */
-
 nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav .menu itu fungsi html dkasih class menu */
-	display:block; 
-	position:relative; 
+	display:block;      /* agar menunya menampilkan secara block/satu persatu menu dijadikan blok tersendiri */
+	position:relative; /* agar posisinya mudah diatur sesuai keinginan */
 	width: 100%;
 	height: 50px;
 	background-color: brown;
@@ -81,12 +85,15 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	list-style:none;
 }
 
+/*ini pengaturan untuk jarak menu home ke menu yg lainnya, maargin-leftnya jika diubah maka jarak antara tulisan menunya akan berubah
+	padding untuk menambahkan warna background yg awalnya jika tidak pakai padding maka tulisan menunya akan berada paling atas layernya */
 .menu li{
 	float:left; 
 	margin-left:30px;
 	padding-top: 10px;
 }
 
+/*warna font menu hitam jika mouse tidak diarahkan ke link menu tsb */
 .menu li a{
 	float: left;
 	text-align: center;
@@ -95,14 +102,17 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	font: 30px Agency FB;
 }
 
+/*warna font menu hitam setelah di klik */
 .menu li a:visited{
 	color: #000;
 }
 
+/*warna font menu berubah jadi putih ketika mouse diarahkan ke link menu tsb */
 .menu li a:hover, .menu li .active{
 	color:#F8F9F3; 
 }
 /*end menu */
+
 
 .teks {
 	font: 40px century ghotic;
@@ -112,14 +122,17 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	margin-bottom: -10px;
 }
 
+/* ---UNTUK ISI DALAM LAYER CONTENT--- */ 
+/* paragraf berguna memberikan jarak jika kita ingin membuat tulisan dengan judul lain */
 .paragraf {
 	margin-bottom: 40px;
 	width: 700px;
 	height: 0 auto;
 	margin-left: 30px;
-	word-wrap:break-word;
+	word-wrap:break-word; /* agar tulisan tidak melebihi pengaturan layer, jika dihapus maka akan membuat tulisan melewati batas layer (ke samping terus) */
 }
 
+/* untuk judul yg ada dalam paragraf */
 .judul {
 	text-align:left;
 	color : purple; 
@@ -128,17 +141,20 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	margin-bottom: 10px;
 }
 
+/* untuk gambar yg hanya 1 gambar */
 .img1{
 	width:400px; 
 	height:275px;
 }
 
+/* untuk gambar yg 2 gambar, jika lebih dari 2 mendingan atur ulang height sama weightnya atau dengan bikin class baru */
 .img2{
 	width:300px; 
 	height:375px;
-	margin-left: 10px;
+	margin-left: 10px;   /*  agar ada jarak antara gambar satu dan lainnya, jaraknya sebelah kiri */
 }
 
+/* Untuk keterangan atau isi teks dari judul, bisa ditaro di bawah atau atas gambar. yg penting selalu gunakan <p class="isi">teks</p> agar rapih  */
 .isi {
 	text-align: justify;
 	color : darksalmon; 
@@ -146,17 +162,23 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	font-family:century gothic;
 }
 
+/* Style untuk gariis hr yg menggunakan class */
 .style{
 	border:dashed 1px purple;
 }
 
+/* Untuk pengaturan tulisan yg ada di judul How to Order yg ada di dalam tabel */
 label {
 	text-align: justify;
 	color : darksalmon; 
 	font-size:20px; 
 	font-family:century gothic;
 }
+/* ---AKHIR ISI DALAM LAYER CONTENT--- */ 
 
+
+/* ---UNTUK ISI DALAM LAYER SIDEBAR--- */ 
+/* untuk garis yg membatasi sidebar Subscribe dan Contact US */
 .box {
 	width:220px;
 	height:0 auto;
@@ -164,9 +186,10 @@ label {
 	margin-left: 5px;
 	margin-top: 20px;
 	text-align:justify;
-	padding: 5px;
+	padding: 5px;                /* padding untuk tulisannya biar agak menjorok ke dalam sebanyak 5px, jika dihapus maka tulisan akan mendekati garisnya */
 }
 
+/* Untuk judul sidebar, harus di dalam div class="box"*/ 
 .title {
 	color: purple; 
 	font-size:20px; 
@@ -175,3 +198,4 @@ label {
 	margin: 0 auto;
 	text-shadow: 2px 2px 5px red;
 }
+/* ---AKHIR ISI DALAM LAYER SIDEBAR--- */ 
