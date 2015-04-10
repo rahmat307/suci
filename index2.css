@@ -1,0 +1,121 @@
+body {
+	padding-top:10px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-bottom: 10px;
+	background-image:url('images/New folder/zj1.jpg');
+	}
+	#wrapper{
+		width: 900px;
+		height: auto;
+		margin: auto:
+		}
+
+header{
+		width: 1000px;
+		height: 300px;
+		background-image:url('images/w.jpg');
+		background-position:center top;
+		}
+nav {
+		margin-top: 20px;
+		width: 1000px;
+		height: 50px;
+		background-color:brown;
+		overflow:hidden;
+}
+#div{
+		padding:10px;
+		width: 980px;
+		height: 50px;
+		font-size:9px;
+		color:black;
+		text-align:center;
+		font-family:arial;
+		background-color:darksalmon;
+		}
+article {
+		padding-top:5px;
+		width: 1000px;
+		overflow:hidden;;
+		background-color:lavenderblush;;
+	}
+article .kiri {
+	width:600px;
+	height:auto;
+	float:left;/*tulisan dimulai dari sebelah kiri */
+	padding:60px;
+	border-right:#fb1ff3 double 5px;
+}
+.New{
+	width:400px;
+	height:auto;
+	float:left;/*tulisan dimulai dari sebelah kiri */
+	padding:20px;
+	border:#fb1ff3 dotted 2px;
+}
+.New1{
+	width:230px;
+	height:300px;
+	float:left;/*tulisan dimulai dari sebelah kiri */
+	padding-left:10px;
+	border:#fb1ff3 dotted 2px;
+	overflow:scroll;;
+	margin: 10px;
+}
+article .kanan {
+	width:250px;
+	height:auto;
+	float:left;
+	padding:10px;
+	
+}
+footer{
+        margin-top: 20px;
+		padding:10px;
+		font-size:9px;
+		color:purple;
+		text-align:center;
+		font-family:arial;
+	}
+			
+nav ul{
+		margin:0px;
+	}
+nav ul li{
+		float:left;
+		list-style:none;
+		padding:10px;
+		font-family:Agency FB;
+		font-size:14pt;
+		color:white;
+		}
+.b{
+		text-align:left;
+		color : darksalmon; 
+		font-size:20px; 
+		font-family:century gothic;
+		}
+h1 {
+    text-shadow: 2px 2px 5px red;
+}
+	
+
+
+ul li a { 
+		text-decoration: none;
+		color: pink;
+	}
+a:link {color : steelcoral; text-decoration:none;}
+a:visited {color : coral; text-decoration:none;}
+a:hover {color : pink; text-decoration:underline;}
+a:active {color : teal; text-decoration:underline;}
+.c{
+		text-align:left;
+		color : purple; 
+		font-size:30px; 
+		font-family:century gothic;
+		}
+
+
+
