@@ -96,7 +96,7 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 }
 
 .menu li a:visited{
-	color: #ffcc33;
+	color: #000;
 }
 
 .menu li a:hover, .menu li .active{
@@ -125,18 +125,17 @@ nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav 
 	color : purple; 
 	font-size:30px; 
 	font-family:century gothic;
+	margin-bottom: 10px;
 }
 
 .img1{
 	width:400px; 
 	height:275px;
-	margin-top: -40px;
 }
 
 .img2{
 	width:300px; 
 	height:375px;
-	margin-top: -20px;
 	margin-left: 10px;
 }
 
