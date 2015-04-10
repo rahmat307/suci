@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0 auto; 
+	padding:0 auto; 
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	color: #000; 
+	background-color: #FFF;
+}
+
+#container{
+	display:block; 
+	position:relative; 
+	width: 1024px;
+	height: 0 auto;
+	background-color: lavenderblush;
+	margin: 0 auto; /*agar posisi container berada di center */
+}
+
+#header {
+	width: 100%;
+	height: 200px;
+	/*background-image:url('images/w.jpg');*/
+	background-color: #FF0;
+	background-position:center top;
+	margin-top: 20px; /* agar ada jarak di atas header */
+}
+
+/* content */
+#content {
+	float:left;
+	width: 75%;
+	background-color: lavenderblush;
+	height: 0 auto;
+	border-right:#fb1ff3 double 10px;
+}
+
+#sidebar {
+	float:left;
+	width: 24%;
+	background-color: lavenderblush;
+	min-height: 400px;
+	word-wrap:break-word;
+}
+
+#footer {
+	float:left;
+	width:100%;
+	height: 40px;
+	background-color:#C9C;
+	margin-bottom: 20px;
+}
+
+#footer h2 {
+	margin: 0 auto;
+	padding-top: 10px; 
+	font-size:22px;
+	text-align:center;
+}
+
+.clear{
+	clear:both;
+}
+
+/* menu */
+
+nav, nav .menu{  /* ini maksudnya yg pertama nav itu fungsi htmlnya, nah yg nav .menu itu fungsi html dkasih class menu */
+	display:block; 
+	position:relative; 
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	margin: 0 auto;
+	position: relative;
+}
+
+.menu ul {
+	margin:0; 
+	padding:0; 
+	list-style:none;
+}
+
+.menu li{
+	float:left; 
+	margin-left:30px;
+	padding-top: 10px;
+}
+
+.menu li a{
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font: 30px Agency FB;
+}
+
+.menu li a:visited{
+	color: #ffcc33;
+}
+
+.menu li a:hover, .menu li .active{
+	color:#F8F9F3; 
+}
+/*end menu */
+
+.teks {
+	font: 40px century ghotic;
+	margin-top: 10px;
+	font-weight:bold;
+	font-style:italic;
+	margin-bottom: -10px;
+}
+
+.paragraf {
+	margin-bottom: 40px;
+	width: 700px;
+	height: 0 auto;
+	margin-left: 30px;
+	word-wrap:break-word;
+}
+
+.judul {
+	text-align:left;
+	color : purple; 
+	font-size:30px; 
+	font-family:century gothic;
+}
+
+.img1{
+	width:400px; 
+	height:275px;
+	margin-top: -40px;
+}
+
+.img2{
+	width:300px; 
+	height:375px;
+	margin-top: -20px;
+	margin-left: 10px;
+}
+
+.isi {
+	text-align: justify;
+	color : darksalmon; 
+	font-size:18px; 
+	font-family:century gothic;
+}
+
+.style{
+	border:dashed 1px purple;
+}
+
+label {
+	text-align: justify;
+	color : darksalmon; 
+	font-size:20px; 
+	font-family:century gothic;
+}
+
+.box {
+	width:220px;
+	height:0 auto;
+	border:#fb1ff3 dotted 2px;
+	margin-left: 5px;
+	margin-top: 20px;
+	text-align:justify;
+	padding: 5px;
+}
+
+.title {
+	color: purple; 
+	font-size:20px; 
+	font-family:century gothic;
+	text-align:center;
+	margin: 0 auto;
+	text-shadow: 2px 2px 5px red;
+}
